@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    public float speed = 0.02f;
+    public float speed;
     public float xMax;
     public float xMin;
     public Camera gameCamera;
@@ -11,14 +11,20 @@ public class Mover : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        xMax = Screen.width;
+
+        //set xMin to whatever is too far to the left for the player to see
+        xMin = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
         Vector3 moverXPos = transform.position;
-        moverXPos.x = moverXPos.x + speed;
+        moverXPos.x += speed * Time.deltaTime;
+
+
+
         transform.position = moverXPos;
 
         //Screen.width;
@@ -27,10 +33,7 @@ public class Mover : MonoBehaviour
 
         //set xMax to whatever is too far to the right for the player to see
         Vector3 screenTransformPosition = gameCamera.WorldToScreenPoint(transform.position);
-        xMax = Screen.width;
-
-        //set xMin to whatever is too far to the left for the player to see
-        xMin = 0;
+      
 
         if (xMax < screenTransformPosition.x)
         {
