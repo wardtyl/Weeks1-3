@@ -20,11 +20,11 @@ public class TimerCounter : MonoBehaviour
         timePassed += Time.deltaTime;
         if (timePassed > waitDuration)
         {
-            float reset = 0f;
+         //   float reset = 0f;
 
-            for (int speed = 0.10f; speed < 1.01; speed++)
+           // for (int speed = 0.10f; speed < 1.01; speed++)
             { }
             }
         }
     }
-}
+
