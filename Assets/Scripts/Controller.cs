@@ -58,11 +58,11 @@ public class Controller : MonoBehaviour
             bool downArrowHeld = Keyboard.current.downArrowKey.isPressed;
             if (leftArrowHeld)
             {
-                currentTransform.eulerAngles += currentTransform.forward * rotateSpeed * Time.deltaTime;
+                currentTransform.eulerAngles += currentTransform.forward * rotationSpeed * Time.deltaTime;
             }
             if (rightArrowHeld)
             {
-                currentTransform.eulerAngles -= currentTransform.forward * rotateSpeed * Time.deltaTime;
+                currentTransform.eulerAngles -= currentTransform.forward * rotationSpeed * Time.deltaTime;
             }
             if (upArrowHeld)
             {
@@ -74,15 +74,14 @@ public class Controller : MonoBehaviour
             }
         }
 
-    }
-
-    bool leftIsHeld = Mouse.current.leftButton.isPressed;
-        if(leftIsHeld )
+        bool leftIsHeld = Mouse.current.leftButton.isPressed;
+        if (leftIsHeld)
         {
             Debug.Log("left mouse is held");
         }
         bool leftIsPressed = Mouse.current.leftButton.wasPressedThisFrame;
-        if(leftIsPressed ) {
+        if (leftIsPressed)
+        {
             Debug.Log("Left mouse is pressed.");
         }
 
@@ -91,29 +90,34 @@ public class Controller : MonoBehaviour
         {
             Debug.Log("Left mouse is released.");
         }
-      //bool spaceIsPressed = Keyboard.current.spaceKey.isPressed;
+        //bool spaceIsPressed = Keyboard.current.spaceKey.isPressed;
 
-    //    bool upIsPressed = Keyboard.current.upArrowKey.isPressed;
-    //    if (upIsPressed)
-    //    {
-    //        transform.position += transform.up * moveSpeed * Time.deltaTime;
-    //    }
-       
-    //    bool downIsPressed = Keyboard.current.downArrowKey.isPressed;
-    //    if (downIsPressed)
-    //    {
-    //        transform.position -= transform.up * moveSpeed * Time.deltaTime;
-    //    }
-    //    bool leftArrowIsPressed = Keyboard.current.leftArrowKey.isPressed;
-    //    if (leftArrowIsPressed)
-    //    {
-    //        transform.eulerAngles += transform.forward * rotationSpeed * Time.deltaTime;
-    //    }
+        //    bool upIsPressed = Keyboard.current.upArrowKey.isPressed;
+        //    if (upIsPressed)
+        //    {
+        //        transform.position += transform.up * moveSpeed * Time.deltaTime;
+        //    }
 
-    //    bool rightArrowIsPressed = Keyboard.current.rightArrowKey.isPressed;
-    //    if (rightArrowIsPressed)
-    //    {
-    //        transform.eulerAngles -= transform.forward * rotationSpeed * Time.deltaTime;
-    //}
+        //    bool downIsPressed = Keyboard.current.downArrowKey.isPressed;
+        //    if (downIsPressed)
+        //    {
+        //        transform.position -= transform.up * moveSpeed * Time.deltaTime;
+        //    }
+        //    bool leftArrowIsPressed = Keyboard.current.leftArrowKey.isPressed;
+        //    if (leftArrowIsPressed)
+        //    {
+        //        transform.eulerAngles += transform.forward * rotationSpeed * Time.deltaTime;
+        //    }
+
+        //    bool rightArrowIsPressed = Keyboard.current.rightArrowKey.isPressed;
+        //    if (rightArrowIsPressed)
+        //    {
+        //        transform.eulerAngles -= transform.forward * rotationSpeed * Time.deltaTime;
+        //}
+
+
+    }
 }
-}
+
+
+
