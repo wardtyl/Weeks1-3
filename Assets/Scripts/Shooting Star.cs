@@ -7,6 +7,7 @@ public class ShootingStar : MonoBehaviour
     public Transform endValue;
     public float progress = 0;
     public Vector3 output;
+    public float duration;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
