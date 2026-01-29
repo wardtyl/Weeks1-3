@@ -1,16 +1,24 @@
+using UnityEditor;
 using UnityEngine;
 
 public class ShootingStar : MonoBehaviour
 {
+    public Transform startValue;
+    public Transform endValue;
+    public float progress = 0;
+    public Vector3 output;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
-    }
+
+     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
+    progress += Time.deltaTime / 2f;
+    output = Vector3.Lerp(startValue.position, endValue.position, progress);
+    transform.position = output;
+}
 }
