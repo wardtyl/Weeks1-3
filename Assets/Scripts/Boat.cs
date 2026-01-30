@@ -19,9 +19,11 @@ public class Boat : MonoBehaviour
         //Assigned the x value of worldMousePosition so that it is always in the oppsoite direction of the actual mouse position.
         Vector3 currentMousePosition = Mouse.current.position.ReadValue();
         Vector3 worldMousePosition = gameCamera.ScreenToWorldPoint(currentMousePosition);
+        
         worldMousePosition.x *= -1f;
         worldMousePosition.y = -0.26f;
         worldMousePosition.z = 5f;
+        
         transform.position = worldMousePosition;
     }
 }
