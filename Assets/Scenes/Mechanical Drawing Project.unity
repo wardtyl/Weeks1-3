@@ -351,8 +351,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e42e6a2f02c95043b83e85968708f20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 1.5
   size: 0
+  period: 1.5
   progress: 0
   curve:
     serializedVersion: 2
@@ -742,8 +742,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e42e6a2f02c95043b83e85968708f20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 2.5
   size: 0
+  period: 2.5
   progress: 0
   curve:
     serializedVersion: 2
@@ -1275,8 +1275,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e42e6a2f02c95043b83e85968708f20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 2
   size: 0
+  period: 2
   progress: 0
   curve:
     serializedVersion: 2
