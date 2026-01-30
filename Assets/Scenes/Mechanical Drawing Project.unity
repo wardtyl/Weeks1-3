@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 104182961}
   - component: {fileID: 104182960}
+  - component: {fileID: 104182962}
   m_Layer: 0
   m_Name: moon_full
   m_TagString: Untagged
@@ -179,7 +180,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: ba1465d76b4ab36479be571a02014572, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -206,6 +207,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &104182962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104182959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9594eb70d72733647b72ee55644e68fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameCamera: {fileID: 1003943774}
 --- !u!1 &312323489
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,6 +230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 312323491}
   - component: {fileID: 312323490}
+  - component: {fileID: 312323492}
   m_Layer: 0
   m_Name: Boat
   m_TagString: Untagged
@@ -293,6 +308,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &312323492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312323489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d0678cb78a5d14a8b04283dab2d005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &989382684
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,7 +1003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 2
-  size: -1
+  size: 0
   curve:
     serializedVersion: 2
     m_Curve:
