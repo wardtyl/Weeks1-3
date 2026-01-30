@@ -4,7 +4,7 @@ public class Star : MonoBehaviour
 {
     public float duration;
     public float size;
-    private float progress = 0f;
+    public float progress = 0f;
     public AnimationCurve curve;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
